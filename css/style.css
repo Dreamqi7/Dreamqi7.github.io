@@ -285,7 +285,12 @@ section h2 .emo { font-size: 1.05rem; }
 
 section p { margin: 0 0 .95rem; color: var(--ink-soft); }
 section p:last-child { margin-bottom: 0; }
-#about p { color: var(--ink); }
+#about p {
+  color: var(--ink);
+  text-align: justify;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
 
 .note {
   font-size: .82rem;
@@ -461,6 +466,7 @@ section p:last-child { margin-bottom: 0; }
 }
 .dated li:last-child { border-bottom: none; }
 
+.dated .role,
 .services .role {
   font-family: var(--f-mono);
   font-size: .69rem;
@@ -541,7 +547,7 @@ footer p { margin: 0 0 .5rem; color: var(--ink-faint) !important; }
   .pub { grid-template-columns: 1fr; gap: .5rem; }
   .venue { margin-top: 0; }
   .timeline li { grid-template-columns: 1fr; gap: .35rem; }
-  .services .role { min-width: auto; }
+  .dated .role, .services .role { min-width: auto; }
   .dated li, .newslist li { flex-wrap: wrap; }
 }
 
