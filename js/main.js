@@ -35,7 +35,7 @@
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
 
     reveals.forEach(function (el, i) {
       el.style.transitionDelay = Math.min(i, 6) * 60 + 'ms';
